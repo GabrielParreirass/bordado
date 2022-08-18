@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Montserrat:wght@100;300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  overflow: hidden;
+  width: 100vw;
+  height: 10vh;
+  background-color: #e8b9ab;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.header ul {
+  overflow-y: hidden;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header ul li,
+a {
+  color: black;
+  font-weight: normal;
+  padding: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header ul li:hover {
+  background-color: white;
+}
+.main-photo {
+  height: 80vh;
+  background-image: url(knit-g322fc0d27_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.quem-somos {
+  background-color: #70c2c9;
+}
+
+.quem-somos-wrapper {
+  margin: auto;
+  max-width: 50vw;
+  padding: 3rem;
+  text-align: center;
+}
+
+.quem-somos-wrapper h1 {
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.quem-somos-wrapper p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+.products-showcase {
+  margin: 2rem;
+  text-align: center;
+}
+
+.products-showcase h1 {
+  padding: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+
+.product {
+  max-width: 25vw;
+}
+
+.insta-feed {
+  padding: 5rem;
+  background-color: #e8b9ab;
+}
+
+.aonde-estamos {
+  background-color: #70c2c9;
+  text-align: center;
+}
+
+.aonde-estamos-wrapper {
+  margin: auto;
+  max-width: 50vw;
+  padding: 3rem;
+  text-align: center;
+}
+
+.aonde-estamos-wrapper h1 {
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aonde-estamos-wrapper p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+.aonde-estamos-wrapper a {
+  margin-top: 2em;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
+
+.map {
+  padding: 2rem;
+}
+
+.map iframe {
+  border-radius: 10px;
+}
+
+.footer {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+}
+
+.footer ul li {
+  margin: 2rem;
+  font-family: "Montserrat", Arial;
+  font-weight: bold;
+}
+
+.footer > p,
+a {
+  overflow: hidden;
+  color: #70c2c9;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .header {
+    overflow: hidden;
+    width: 100vw;
+    height: auto;
+    background-color: #e8b9ab;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+  }
+
+  .header ul {
+    overflow-y: hidden;
+    height: auto;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header ul li{
+    text-align: center;
+  }
+
+  .header ul li,
+  a {
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .header ul li:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  .menu-burger{
+    padding: 2rem;
+    float: right;
+  }
+  .menu-burger-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-right: 2rem;
+  }
+
+  .products-showcase {
+    margin: 2rem;
+    text-align: center;
+  }
+  
+  .products-showcase h1 {
+    padding: 2rem;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .products-wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .product {
+    text-align: center;
+    max-width: 100vw;
+    padding: 1rem;
+  }
+  .footer {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .footer ul li {
+    margin: 1rem;
+    font-family: "Montserrat", Arial;
+    font-weight: bold;
+  }
+  
+  .footer > p,
+  a {
+    overflow: hidden;
+    color: #70c2c9;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+}
